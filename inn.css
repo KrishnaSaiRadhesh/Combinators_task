@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    margin: 50px 100px;
+    display: inline-block;
+}
+
+button{
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    margin: 50px 0 0 100px;
+    display: inline-block;
+}
+
+.images>.i1,.i2,.i3,.i4{
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.b1:hover,.b2:hover,.b3:hover,.b4:hover{
+    background-color: black;
+    color: white;
+}
+
+.b1:hover~.images>.i1{
+    display: block;
+}
+
+.b2:hover~.images>.i2{
+    display: block;
+}
+
+.b3:hover~.images>.i3{
+    display: block;
+}
+
+.b4:hover~.images>.i4{
+    display: block;
+}
